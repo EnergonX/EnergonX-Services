@@ -8,7 +8,7 @@ Feel free to ask your supplier to send you:
 - see reference formation within your regular invoice.
 
 The **Cancellation Statement** declares that certain amount of hydrogen, produced by a electrolyser,
-used green electricity from PV, OVE, Wind turbines or other green power splant, is accounted on your 
+used green electricity from PV, OVE, Wind turbines or other green power plant, is accounted on your 
 consumption and it can´t be used for a consumption anywhere else.
 
 Please see https://energonx.com/blog for more information. 
