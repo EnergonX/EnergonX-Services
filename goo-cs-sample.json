@@ -1,0 +1,228 @@
+{
+    "title": "Cancellation Statement",
+    "description": "With this cancellation Statement the indicated Certificates are no longer tradable. Onward sale of this Cancellation Statement is prohibited.",
+    "type": "object",
+    "properties": {
+        "transactionDate": {
+            "type": "string",
+            "title": "Transaction Date",
+            "format": "date-time",
+            "default": "2020-10-10 13:38:54"
+        },
+        "transactionNumber": {
+            "type": "string",
+            "title": "Transaction Number",
+            "default": "20201010000000010"
+        },
+        "transactionStatus": {
+            "type": "string",
+            "title": "Transaction Status",
+            "default": "Completed"
+        },
+        "totalGO": {
+            "type": "string",
+            "title": "Total GO",
+            "default": "134"
+        },
+        "totalAmount": {
+            "type": "string",
+            "title": "Total Amount",
+            "default": "134"
+        },
+        "Certificates": {
+            "type": "object",
+            "properties": {
+                "fromNumber": {
+                    "type": "string",
+                    "title": "From Certificate #",
+                    "default": "5982347234214085432"
+                },
+                "toNumber": {
+                    "type": "string",
+                    "title": "To Certificate #",
+                    "default": "5982347234215421354"
+                },
+                "volume": {
+                    "type": "string",
+                    "title": "Volume",
+                    "default": "134"
+                },
+                "domain": {
+                    "type": "string",
+                    "title": "Domain",
+                    "default": "Slovenia"
+                },
+                "fuel": {
+                    "type": "string",
+                    "title": "Fuel",
+                    "default": "F01050100"
+                },
+                "technology": {
+                    "type": "string",
+                    "title": "Technology",
+                    "default": "T02003"
+                },
+                "issuingDate": {
+                    "type": "string",
+                    "title": "Issuing Date",
+                    "format": "date-time",
+                    "default": "2020-10-10 13:08:54"
+                },
+                "productionPeriodFrom": {
+                    "type": "string",
+                    "title": "Production Period From",
+                    "format": "date-time",
+                    "default": "2020-10-10 13:38:54"
+                },
+                "productionPeriodTo": {
+                    "type": "string",
+                    "title": "Production Period To",
+                    "format": "date-time",
+                    "default": "2020-10-10 13:38:54"
+                },
+                "tradingScheme": {
+                    "type": "string",
+                    "title": "Trading Scheme",
+                    "default": "GO"
+                },
+                "supportScheme": {
+                    "type": "string",
+                    "title": "Support Scheme",
+                    "default": "Investment And Production Support"
+                }
+            }
+        },
+        "GuaranteeOfOriginIssuer": {
+            "type": "object",
+            "properties": {
+                "guaranteeIssuerName": {
+                    "type": "string",
+                    "title": "Issuer Name",
+                    "default": "ISSUER NAME"
+                },
+                "guaranteeIssuerIdentifier": {
+                    "type": "string",
+                    "title": " Identifier",
+                    "default": "0x0000000000000000000000000000000000000000"
+                },
+                "guaranteeIssuerValidator": {
+                    "type": "string",
+                    "title": "Validator",
+                    "default": "0x0000000000000000000000000000000000000000"
+                }
+            }
+        },
+
+        "ProductionDevice": {
+            "type": "object",
+            "properties": {
+                "deviceName": {
+                    "type": "string",
+                    "title": "Device Name",
+                    "default": "Electrolyser DF131"
+                },
+                "productionDeviceGSRN": {
+                    "type": "string",
+                    "title": "Production Device GSRN",
+                    "default": "5550005550005550000"
+                },
+                "productionDeviceDomain": {
+                    "type": "string",
+                    "title": "Production Device Domain",
+                    "default": "Slovenia"
+                },
+                "installedCapacity": {
+                    "type": "string",
+                    "title": "Installed Capacity",
+                    "default": "30"
+                },
+                "dateOfCommissioning": {
+                    "type": "string",
+                    "title": "Date Of Commissioning",
+                    "default": "2005-10-10 13:38:54",
+                    "format": "date-time"
+                },
+                "locationOfProductionDevice": {
+                    "type": "string",
+                    "title": "Location Of Production Device",
+                    "default": "Ljubljana, Slovenia"
+                },
+                "operatorName": {
+                    "type": "string",
+                    "title": "Operator Name",
+                    "default": "Hydrogen Company Producer"
+                },
+                "operatorAddress": {
+                    "type": "string",
+                    "title": "Address Of Operator",
+                    "default": "Street X 32, Ljubljana, Slovenia"
+                },
+                "productionDeviceTechnology": {
+                    "type": "string",
+                    "title": "Technology",
+                    "default": "PEM Electrolyser"
+                },
+                "productionDeviceFuel": {
+                    "type": "string",
+                    "title": "Fuel / Energy source",
+                    "default": "Wind/Offshore"
+                }
+            }
+        },
+
+        "swarmHash": {
+            "type": "string",
+            "title": "Swarm location",
+            "default": "0x0",
+            "format": "string"
+        },
+
+
+        "proof": {
+            "type": "string",
+            "title": "Proof",
+            "format": "string",
+            "default": "0x0"
+        },
+
+        "signature": {
+            "signatureOwner": {
+                "type": "string",
+                "title": "Signature Owner",
+                "default": "0x0"
+            },
+            "type": "string",
+            "title": "Signature",
+            "format": "string",
+            "default": "0x0"
+        },
+
+        "EIP712": {
+            "type": "object",
+            "properties": {
+                "types": {
+                    "type": "object",
+                    "properties": {
+                        "EIP712Domain": { "type": "array" }
+                    },
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": { "type": "string" },
+                                "type": { "type": "string" }
+                            },
+                            "required": [ "name", "type" ]
+                        }
+                    },
+                    "required": [ "EIP712Domain" ]
+                },
+                "primaryType": { "type": "string" },
+                "domain": { "type": "object" },
+                "message": { "type": "object" }
+            },
+            "required": [ "types", "primaryType", "domain", "message" ]
+        }
+    }
+}

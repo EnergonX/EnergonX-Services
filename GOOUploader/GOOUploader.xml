@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GOOUploader</name>
+    </assembly>
+    <members>
+        <member name="T:GOOUploader.Controllers.GOOCSUploaderController">
+            <summary>
+            Controller to upload / download data from Bee
+            </summary>
+        </member>
+        <member name="F:GOOUploader.Controllers.GOOCSUploaderController.beeUri">
+            <summary>
+            Specify bee location
+            </summary>
+        </member>
+        <member name="F:GOOUploader.Controllers.GOOCSUploaderController.version">
+            <summary>
+            Cancelation Statement version
+            </summary>
+        </member>
+        <member name="F:GOOUploader.Controllers.GOOCSUploaderController.batchId">
+            <summary>
+            Development swarm batchId
+            </summary>
+        </member>
+        <member name="M:GOOUploader.Controllers.GOOCSUploaderController.#ctor(Microsoft.Extensions.Logging.ILogger{GOOUploader.Controllers.GOOCSUploaderController})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:GOOUploader.Controllers.GOOCSUploaderController.GetContentsFromReference(System.String)" -->
+        <member name="M:GOOUploader.Controllers.GOOCSUploaderController.Put(System.String)">
+            <summary>
+            Test Upload data to Bee, with default batchId (will not work outside test environment)
+            </summary>
+            <param name="textData"></param>
+            <returns>content location</returns>
+        </member>
+        <member name="M:GOOUploader.Controllers.GOOCSUploaderController.GetGOOCS(System.String)">
+            <summary>
+            Download GOO Cancelation statement from Bee
+            </summary>
+            <param name="hash"></param>
+            <returns>CancelationStatement
+            and Return Code of Request</returns>
+        </member>
+        <member name="M:GOOUploader.Controllers.GOOCSUploaderController.PostGOOCS(GOO_Model.CancelationStatement,System.String)">
+            <summary>
+            Upload GOO Cancelation Statement to bee
+            </summary>
+            <param name="cancelationStatement"></param>
+            <param name="swarmBatchId"></param>
+            <returns>reference</returns>
+        </member>
+        <member name="M:GOOUploader.Controllers.GOOCSUploaderController.UploadFileData(System.String,System.String,System.String)">
+            <summary>
+            Upload text to bee with filename and batchId
+            </summary>
+            <param name="name">Filename to be used</param>
+            <param name="data">Contents of text file</param>
+            <param name="swarmBatchId">Batch Id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
