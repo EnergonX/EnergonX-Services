@@ -11,6 +11,7 @@ The **Cancellation Statement** declares that certain amount of hydrogen, produce
 used green electricity from PV, OVE, Wind turbines or other green power splant, is accounted on your 
 consumption and it can´t be used for a consumption anywhere else.
 
+Please see https://energonx.com/blog for more information. 
 
 ## Guarantees Of Origin Cancelation Statement Storage Services
 This project uses Bee to store and retrieve Guarantees of Origin Cancelation Statements (GOOCS). 
