@@ -29,7 +29,7 @@ go to `/swagger/v1/swagger.json` to see API Endpoints and Schemas used.
 ## Cancelation Statement
 Uses generalized data model, featuring dynamic property definitions, see GOOModel.cs for additional info  
 - [ ] JSON Schema
-     Check `goo-cs-sample.json` to see sample object. 
+     Check https://github.com/EnergonX/EnergonX-Services/blob/master/goo-cs-sample.json to see sample object. 
 - [ ] UI Schema
 - [ ] Form Data
 
@@ -38,7 +38,7 @@ Uses generalized data model, featuring dynamic property definitions, see GOOMode
 To run, clone repo
 `git clone https://github.com/EnergonX/EnergonX-Services.git`
 
-## Run 
+## Run locally 
 Open solution in VS Code and run `GOOUploader` project.
 
 ### Development mode 
@@ -51,6 +51,20 @@ OpenAPI json is available at https://localhost:5001/swagger/v1/swagger.json
 - Docker 
 
 Choose configuration based on your preference. Requires NET.Core 5. 
+
+### Clean
+`dotnet clean`
+
+### Build 
+To build use  `dotnet build --configuration Release`
+
+Add Runtime to build for specific OSs
+- Ubuntu  `--runtime ubuntu.18.04-x64`
+- Windows `--runtime osx.10.11-x64`
+- Mac     `--runtime ubuntu.18.04-x64`
+
+### Publish:
+`dotnet publish --runtime osx.10.11-x64 --configuration Release --self-contained true`
 
 ## Available API Calls
 See https://github.com/EnergonX/EnergonX-Services/blob/master/GOOUploader/GOOUploader.md for documentation on API REST Calls. 
@@ -69,9 +83,18 @@ Test Upload data to Bee, with default batchId (will not work outside test enviro
 EnergonX and EnergonX Services are under active development. 
 You can use Controller on how to use Bee to store data from C# using `HttpClient`. 
 
-## Network and Security 
+## Network consideration
 Never tested if gateways are supported. URI of Bee must be reachable on network to this app.  
 We suggest environment where bee is **only** accessible from this app, and not from outside. 
 
+## Security 
+This app service requires **NO** authorization and authentification. 
+- GOOCSs are signed by issuers and can be verified any time. 
+- Services that wish to store their GOOCS must buy and provide their `batchId` and store references in their databases. 
+- EnergonX Marketplace will never be aware of those GOOCSs. 
+- This app has logger for development purpuses, but collects no other data from requests. 
+- Any one can setup Bee node and use this app service to upload files and data as long as they provide their batchId. 
+- Privacy is preserved for all callers to service.
+- Anyone with reference to GOOCS can view and download it and verify signatures.  
 
-
+FMF TF
