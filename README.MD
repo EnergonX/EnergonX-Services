@@ -1,6 +1,22 @@
-﻿## Guarantees Of Origin Cancelation Statement Storage Services
+﻿# Guarantee Of Origin 
+When purchase of Green hydrogen occurs via EnergonX Marketplace, 
+**Guarantees of Origin** are stored on decentralized Swarm storage and can be verified by other parties
+
+Feel free to ask your supplier to send you:
+- a reference to document called **Cancellation Statement**,
+- check your executed order which includes reference number 
+- see reference formation within your regular invoice.
+
+The **Cancellation Statement** declares that certain amount of hydrogen, produced by a electrolyser,
+used green electricity from PV, OVE, Wind turbines or other green power splant, is accounted on your 
+consumption and it can´t be used for a consumption anywhere else.
+
+
+## Guarantees Of Origin Cancelation Statement Storage Services
 This project uses Bee to store and retrieve Guarantees of Origin Cancelation Statements (GOOCS). 
-Requires bee to be running on `localhost`
+Requires bee to be running on `localhost`.
+
+Part of EnergonX Marketplace Services. 
 
 ## Service 
 This service is used to store GOOCS from executed orders on Marketplace.
