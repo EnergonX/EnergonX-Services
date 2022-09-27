@@ -22,16 +22,16 @@ Part of EnergonX Marketplace Services.
 ## Service 
 This service is used to store GOOCS from executed orders on Marketplace.
 
-# Swagger Reference 
+## Swagger Reference 
 go to `/swagger/v1/swagger.json` to see API Endpoints and Schemas used.
 
 
 ## Cancelation Statement
-Uses generalized data model, see GOOModel.cs for additional info  
--[ ] JSON Schema
+Uses generalized data model, featuring dynamic property definitions, see GOOModel.cs for additional info  
+- [ ] JSON Schema
      Check `goo-cs-sample.json` to see sample object. 
--[ ] UI Schema
--[ ] Form Data
+- [ ] UI Schema
+- [ ] Form Data
 
 
 ## Setup
@@ -46,13 +46,11 @@ Go to https://localhost:5001/swagger/index.html to see Swagger dashboard and def
 OpenAPI json is available at https://localhost:5001/swagger/v1/swagger.json  
 
 ## Supported Configurations
-IIS Express
-Self hosted Kestrel Server
-Docker 
+- IIS Express
+- Self hosted Kestrel Server
+- Docker 
 
-Choose configuration based on your preference. 
-Requires NET.CORE 5. 
-
+Choose configuration based on your preference. Requires NET.Core 5. 
 
 ## Available API Calls
 See https://github.com/EnergonX/EnergonX-Services/blob/master/GOOUploader/GOOUploader.md for documentation on API REST Calls. 
@@ -66,5 +64,14 @@ Download GOO Cancelation statement from Bee
 Upload text to bee with filename and batchId
 - **PUT** ​/GOOCS​/Test 
 Test Upload data to Bee, with default batchId (will not work outside test environment)
+
+## Development 
+EnergonX and EnergonX Services are under active development. 
+You can use Controller on how to use Bee to store data from C# using `HttpClient`. 
+
+## Network and Security 
+Never tested if gateways are supported. URI of Bee must be reachable on network to this app.  
+We suggest environment where bee is **only** accessible from this app, and not from outside. 
+
 
 
