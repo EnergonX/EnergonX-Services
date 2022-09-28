@@ -96,5 +96,20 @@ This app service requires **NO** authorization and authentification.
 - Any one can setup Bee node and use this app service to upload files and data as long as they provide their batchId. 
 - Privacy is preserved for all callers to service.
 - Anyone with reference to GOOCS can view and download it and verify signatures.  
+- Immutability of data is assured by Swarm.
+
+
+Advent of cloud data and the Internet of Things (IoT) face organizations with a huge volume of transaction data 
+that needs to be securely stored. Immutable files and storage are a suitable solution for storing logs. 
+Organizations need to consider the need for historical data. With data privacy regulations getting stricter, many organizations 
+need to preserve their historical data. To be compliant when a customer or government requests past data, 
+a storage that stores data in the provable immutable store is best suited for this use case. 
+
+Organizations, users and verifiers often need to compare their current data to historical records to understand user trends, measure growth or for verification purpuses. 
+Overwriting the historical data is not a good idea in such cases. Immutable data also helps organizations to keep 
+track of the changes they went through over the years; it is especially helpful in software systems. 
+To implement immutability with standard database approach is hard to prove. Although this app service stores typed data to Swarm,
+a reference to all past executed orders are kept on Markeplace and are stored in a database, from where order information can be retreived.
+Even if data availability is degraded in any way, a user or third party can still provide data that can be prove validity later in time.
 
 FMF TF
